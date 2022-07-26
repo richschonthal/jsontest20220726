@@ -1,0 +1,118 @@
+{
+   "version":1,
+   "id":1,
+   "sent":1658379570,
+   "received":1658379571,
+   "members":[
+      {
+         "id":1992883,
+         "name":"The Boss",
+         "avatar":"https://coolavatars.com/theboss.jpg"
+      },
+      {
+         "id":2993,
+         "name":"Grünt Von Workerface",
+         "avatar":"https://coolavatars.com/thegrunt.jpg"
+      }
+   ],
+   "state":{
+      "closed":null
+   },
+   "presentation":{
+      "condition":"immediate",
+      "priority":"normal",
+      "repeat":[
+         [
+            {
+               "duration":10,
+               "sound":{
+                  "url":"https://sounds.foosoftware.com/fehjehh2.mp3",
+                  "maximizeVolume":true
+               }
+            },
+            {
+               "tts":{
+                  "text":"Checking In",
+                  "maximizeVolume":true
+               }
+            }
+         ],
+         [
+            {
+               "delay":300
+            },
+            {
+               "duration":10,
+               "sound":{
+                  "name":"bonk",
+                  "platform":"ios",
+                  "maximizeVolume":true
+               }
+            },
+            {
+               "duration":10,
+               "sound":{
+                  "name":"bark",
+                  "platform":"android",
+                  "maximizeVolume":true
+               }
+            },
+            {
+               "tts":{
+                  "text":"Checking In",
+                  "maximizeVolume":true
+               }
+            }
+         ],
+         [
+            {
+               "duration":10,
+               "sound":{
+                  "url":"https://sounds.foosoftware.com/fehjehh2.mp3",
+                  "maximizeVolume":true
+               }
+            },
+            {
+               "tts":{
+                  "text":"Please Check In",
+                  "maximizeVolume":true
+               }
+            }
+         ]
+      ]
+   },
+   "content":[
+      {
+         "multichoice":{
+            "id":23,
+            "from":1992883,
+            "to":2993,
+            "read":null,
+            "title":"Check-In",
+            "message":"Are You OK?",
+            "choices":[
+               {
+                  "button":{
+                     "title":"Yes, I'm OK!"
+                  }
+               },
+               {
+                  "button":{
+                     "title":"Yes, But Check Again Soon!"
+                  }
+               },
+               {
+                  "button":{
+                     "title":"No, Please Call Me!"
+                  }
+               },
+               {
+                  "button":{
+                     "title":"No, Send Help!"
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}
