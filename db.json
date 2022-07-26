@@ -1,10 +1,146 @@
 {
-   "chats":[
+   "threads":[
       {
-          "_comment":"open ended chat session",
-
          "version":1,
-         "id":2,
+         "id":1,
+         "sent":1658379570,
+         "received":null,
+         "received":1658379571,
+         "members":[
+            {
+               "id":1992883,
+               "name":"The Boss",
+               "avatar":"https://coolavatars.com/theboss.jpg"
+            },
+            {
+               "id":2993,
+               "name":"Grünt Von Workerface",
+               "avatar":"https://coolavatars.com/thegrunt.jpg"
+            }
+         ],
+         "state":{
+            "closed":123454,
+            "closed":null
+         },
+         
+         "state":null,
+         
+         "presentation":{
+            "condition":"immediate",
+            "priority":"normal",
+            "repeat":[
+               [
+                  {
+                     "duration":10,
+                     "sound":{
+                        "url":"https://sounds.foosoftware.com/fehjehh2.mp3",
+                        "maximizeVolume":true
+                     }
+                  },
+                  {
+                     "tts":{
+                        "text":"Checking In",
+                        "maximizeVolume":true
+                     }
+                  }
+               ],
+               [
+                  {
+                     "delay":300
+                  },
+                  {
+                     "duration":10,
+                     "sound":{
+                        "name":"bonk",
+                        "platform":"ios",
+                        "maximizeVolume":true
+                     }
+                  },
+                  {
+                     "duration":10,
+                     "sound":{
+                        "name":"bark",
+                        "platform":"android",
+                        "maximizeVolume":true
+                     }
+                  },
+                  {
+                     "tts":{
+                        "text":"Checking In",
+                        "maximizeVolume":true
+                     }
+                  }
+               ],
+               [
+                  {
+                     "duration":10,
+                     "sound":{
+                        "url":"https://sounds.foosoftware.com/fehjehh2.mp3",
+                        "maximizeVolume":true
+                     }
+                  },
+                  {
+                     "tts":{
+                        "text":"Please Check In",
+                        "maximizeVolume":true
+                     }
+                  }
+               ]
+            ]
+         },
+                  "presentation":null,
+
+         "content":[
+            {
+               "multichoice":{
+                  "id":23,
+                  "from":1992883,
+                  "to":2993,
+                  "read":null,
+                  "read":1234,
+                  "title":null,
+                  "title":"Check-In",
+                  "message":null,
+                  "message":"Are You OK?",
+                  "choices":null,
+                  "choices":[
+                     {
+                        "button":{
+                           "title":"Yes, I'm OK!"
+                        }
+                     },
+                     {
+                        "button":{
+                           "title":"Yes, But Check Again Soon!"
+                        }
+                     },
+                     {
+                        "button":{
+                           "title":"No, Please Call Me!"
+                        }
+                     },
+                     {
+                        "button":{
+                           "title":"No, Send Help!"
+                        }
+                     }
+                  ]
+               }
+            },
+            {
+            	"choice":null
+            },
+            {
+               "choice":{
+                  "from":2993,
+                  "text":"Yes, But Check Again Soon!"
+               }
+            }
+         ]
+      },
+      {
+         "version":1,
+         "id":1,
          "sent":1658379570,
          "received":1658379571,
          "members":[
@@ -14,7 +150,7 @@
                "avatar":"https://coolavatars.com/theboss.jpg"
             },
             {
-               "id":196981,
+               "id":2993,
                "name":"Grünt Von Workerface",
                "avatar":"https://coolavatars.com/thegrunt.jpg"
             }
@@ -24,8 +160,7 @@
          },
          "presentation":{
             "condition":"immediate",
-            "delivery":"pull",
-            "priority":"important",
+            "priority":"normal",
             "repeat":[
                [
                   {
@@ -88,33 +223,41 @@
          },
          "content":[
             {
-               "text":{
-                  "id":443,
+               "multichoice":{
+                  "id":23,
                   "from":1992883,
-                  "to":196981,
-                  "read":1658379578,
-                  "title":"Schedules",
-                  "message":"Can you take a second shift on Christmas day?"
+                  "to":2993,
+                  "read":null,
+                  "title":"Check-In",
+                  "message":"Are You OK?",
+                  "choices":[
+                     {
+                        "button":{
+                           "title":"Yes, I'm OK!"
+                        }
+                     },
+                     {
+                        "button":{
+                           "title":"Yes, But Check Again Soon!"
+                        }
+                     },
+                     {
+                        "button":{
+                           "title":"No, Please Call Me!"
+                        }
+                     },
+                     {
+                        "button":{
+                           "title":"No, Send Help!"
+                        }
+                     }
+                  ]
                }
             },
             {
-               "text":{
-                  "id":447,
-                  "from":196981,
-                  "to":1992883,
-                  "sent":1658379590,
-                  "read":1658379595,
-                  "message":"No way, can't Bob do it??"
-               }
-            },
-            {
-               "text":{
-                  "id":454,
-                  "from":1992883,
-                  "to":196981,
-                  "sent":1658379630,
-                  "read":1658379633,
-                  "message":"He says it's your turn"
+               "choice":{
+                  "from":2993,
+                  "text":"Yes, But Check Again Soon!"
                }
             }
          ]
